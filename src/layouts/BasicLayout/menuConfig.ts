@@ -2,9 +2,8 @@ const headerMenuConfig = [];
 
 const asideMenuConfig = [
   {
-    name: 'Dashboard',
+    name: '循环渲染表单',
     path: '/',
-    icon: 'smile',
   },
 ];
 

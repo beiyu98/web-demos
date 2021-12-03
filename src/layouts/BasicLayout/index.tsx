@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Shell, ConfigProvider } from '@alifd/next';
 import PageNav from './components/PageNav';
 import Logo from './components/Logo';
-import Footer from './components/Footer';
 
 (function () {
   const throttle = function (type: string, name: string, obj: Window = window) {
@@ -71,10 +70,7 @@ export default function BasicLayout({
         fixedHeader={false}
       >
         <Shell.Branding>
-          <Logo
-            image="https://img.alicdn.com/tfs/TB1.ZBecq67gK0jSZFHXXa9jVXa-904-826.png"
-            text="Logo"
-          />
+          <Logo text="web demos🤠" />
         </Shell.Branding>
         <Shell.Navigation
           direction="hoz"
@@ -88,9 +84,6 @@ export default function BasicLayout({
         </Shell.Navigation>
 
         <Shell.Content>{children}</Shell.Content>
-        <Shell.Footer>
-          <Footer />
-        </Shell.Footer>
       </Shell>
     </ConfigProvider>
   );

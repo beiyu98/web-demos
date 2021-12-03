@@ -11,7 +11,7 @@ interface IRowData{
 
 export default function () {
   const field = Field.useField({
-    parseName: true,
+    parseName: true, // 非常重要，需要看Field源码才能了解
   });
 
   const list = field.getValue<IRowData[]>('list') || [];
